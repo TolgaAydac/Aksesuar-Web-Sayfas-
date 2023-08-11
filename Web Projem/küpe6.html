@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Küpe</title>
+</head>
+<style>
+ 
+    ul { 
+    
+    text-align: left;
+    display: inline;
+    margin: 0;
+    padding: 15px 4px 17px 0;
+    list-style: none;
+   
+  }
+  ul li {
+      border-radius: 25px ;
+    font: bold 12px/18px sans-serif;
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+    padding: 15px 20px;
+    
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  ul li:hover {
+    background: black;
+    color: #fff;
+    
+   
+  }
+  ul li ul {
+    padding: 0;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 300px;
+    box-shadow: none;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s;
+   
+  }
+  ul li ul li { 
+    background: black; 
+    display: block; 
+    color: #fff;
+    text-shadow: 0 -1px 0 #000;
+    
+  }
+  ul li ul li:hover { background: black; text-decoration:underline;}
+  ul li:hover ul {
+    display: block;
+    opacity: 1;
+    visibility: visible; 
+  }
+
+  .yazı{
+
+    position: fixed;
+    right: 595px;
+    top: 290px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+  }
+
+#secim{
+
+    position: fixed;
+    right: 670px;
+    top: 480px;
+    border-radius:  15px;
+    
+}
+#secim2{
+    position: fixed;
+    right: 770px;
+    top: 480px;
+}
+
+#secimm{
+
+position: fixed;
+right: 675px;
+top: 520px;
+border-radius:  15px;
+
+}
+
+#secimm2{
+
+position: fixed;
+right: 820px;
+top: 520px;
+border-radius:  15px;
+
+}
+.btn3 {
+-moz-box-shadow: 0px 10px 14px -7px #276873;
+-webkit-box-shadow: 0px 10px 14px -7px #276873;
+box-shadow: 0px 10px 14px -7px #276873;
+background:-moz-linear-gradient(top, black  5%, black 100%);
+background:-webkit-linear-gradient(top, black 5%, black 100%);
+background:-o-linear-gradient(top, black 5%, black 100%);
+background:-ms-linear-gradient(top, black 5%, black 100%);
+background:linear-gradient(to bottom, black 5%, black 100%);
+background-color:black;
+-moz-border-radius:8px;
+-webkit-border-radius:8px;
+border-radius:8px;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-family:Arial;
+font-size:20px;
+font-weight:bold;
+padding:13px 32px;
+text-decoration:none;
+text-shadow:0px 1px 0px black;
+margin-left: 250px;
+margin-top: -400px;
+width: 300px;
+}
+.btn3:hover {
+background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #408c99), color-stop(1, #599bb3));
+background:-moz-linear-gradient(top, #408c99 5%, #599bb3 100%);
+background:-webkit-linear-gradient(top, #408c99 5%, #599bb3 100%);
+background:-o-linear-gradient(top, #408c99 5%, #599bb3 100%);
+background:-ms-linear-gradient(top, #408c99 5%, #599bb3 100%);
+background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+background-color:#408c99;
+}
+
+</style>
+<body>
+    <center>
+        <img src="images/banner_84.jpg" height="100" width="1000" style="margin: 30px;">
+        <div id="liste">
+            
+           <ul>
+            <a href="WebProje.html" style="color: rgb(236, 161, 161);"><li>ANA SAYFA</li></a>
+               <li>YÜZÜK
+                <ul>
+                    <a href="MinimalYüzük.html"><li>Minimal Yüzük</li></a> 
+    
+       
+       
+                </ul>
+               </li>
+               <li>KOLYE
+                   <ul>
+                   
+                    <a href="GözVeYoncaKolye.html"><li>Göz & Yonca Kolye</li></a> 
+    
+           </ul>
+               </li>
+               <li>KÜPE
+                   <ul>
+                    <a href="Küpe.html">   <li>Halka Küpe</li>    </a>
+                   
+    
+                   
+               </ul>
+                   
+    
+    
+    
+        </div>
+        <div>
+
+    <img src="Küpe images/2-64-gr-tuana-3-71-mm_min.jpg" height="550px" width="550px" style="margin-left: -500px; margin-top: 100px;">
+    <p class="yazı">Kırık Desenli Halka Küpe</p>
+    <p style=" position: fixed; right: 750px; top: 350px; font-size:xx-large;">1.535,10 TL</p>
+    <p style=" position: fixed; right: 760px; top: 420px;">Stok Kodu :   YZK1680</p>
+    <label id="secim2">Küpe Ölçüsü Seçiniz </label>
+    <select id="secim">
+        <option value="">Seçiniz</option>
+        <option value="">Standart</option>
+
+    </select>
+    <label id="secimm2">Renk Seçiniz </label>
+    <select id="secimm">
+        <option value="">Seçiniz</option>
+        <option value="">Rose</option>
+        <option value="">Sarı</option>
+        <option value="">Beyaz</option>
+    </select>
+
+   </div>
+   <a href="tik.html"><button class="btn3" style="position: relative; top: -250px; right: -100px;">SEPETE EKLE</button></a>
+
+</center>
+
+</body>
+</html>
